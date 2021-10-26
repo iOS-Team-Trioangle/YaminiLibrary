@@ -66,12 +66,13 @@ Finally, don't worry about the indent, CocoaPods strips it
 
   # spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
-    spec.swift_version = '5.0'
+    spec.swift_version = '4.0'
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
+  spec.ios.deployment_target = "12.1"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +92,7 @@ Finally, don't worry about the indent, CocoaPods strips it
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "YaminLib/*"
+  spec.source_files  = "YaminLib/**/*.{h,m,swift}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
